@@ -1,0 +1,33 @@
+# Set black background default line colors to white.
+
+lines.color: white
+patch.edgecolor: white
+
+font.size : 20
+font.family : sans-serif
+
+text.color: white
+
+axes.facecolor: 0c1623
+axes.edgecolor: white
+axes.labelcolor: white
+axes.linewidth : 2
+
+
+xtick.color: white
+ytick.color: white
+
+grid.color: 575d66
+
+figure.facecolor: 0c1623
+figure.edgecolor: 0c1623
+
+savefig.facecolor: 0c1623
+savefig.edgecolor: white
+
+### Boxplots
+boxplot.boxprops.color: white
+boxplot.capprops.color: white
+boxplot.flierprops.color: white
+boxplot.flierprops.markeredgecolor: white
+boxplot.whiskerprops.color: white

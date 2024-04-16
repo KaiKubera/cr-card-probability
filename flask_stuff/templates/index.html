@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CR Card Probabilities</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+        <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
+        <link rel="stylesheet" href="static/styles/style.css">
+    </head>
+
+
+    <body>
+        <div class="big-grid">
+            <!--privet Akiruvi :)-->
+            <div class="top-section">
+                <div class="title">
+                    <h1 class="title-top">Clash Royale</h1>
+                    <div class="divider"></div>
+                    <h2 class="title-bottom">Card Probabilities</h2>
+
+                    <p class="made-by">Made by <a href="https://github.com/KaiKubera">Kai Kubera</a></p>
+                </div>
+
+                <div class="vertical-divider"></div>
+
+                <div class="middle-text">
+                    <div class="middle-text-top">
+                        Hi! This is my, the <strong>great Kai Kubera's</strong>, tool that allows you to pick any card from Clash Royale on the right and get some neat statistics in return; namely, this tool shows what cards often go along with your choice. That is - what is the probability of such and such a card to be present in a deck with the card of your choice? 
+                    </div>
+                    <div class="middle-text-bottom">
+                        <strong>NOTE!</strong> This tool doesn't take into account Tower Troops. It also fully relies on me manually updating deck statistics for each new season each month to account for the ever-changing meta. In theory, this process could be automated with a clever algorithm, but I'm not paid enough to do this. In fact, I'm not paid at all to do this. But having said that -- have fun using this!
+                    </div>
+                </div>
+                
+                <div class="vertical-divider"></div>
+
+                <div class="right-text">
+                    <strong>Some technical details</strong>:
+                    <p>The decks used to calculate the probabilities were taken from Battle Logs of Top-10,000
+                        players of the March 2024 Season (Season 96 internally) in Clash Royale. 
+                        That means 25 battles for each of those players, with two decks taken from each battle.
+                        This resulted in the collection of 390,026 <u>unique</u> decks.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bottom-section">
+                <div class="bottom-left-section">
+                    <div class="card-choice">
+                        <div class="card-choice-title">Pick a card!</div>
+                        <div class="card-img-choice-menu">
+                            <div class="card-img"><img class="card-img" src="static/card_icons/Hog Rider.png" alt=""></div>
+                            <!--  <div class="card-choice-menu">Dropdown search menu here</div>  -->
+                            <div class="card-choice-menu">
+                                <form action="/card-probs">
+                                    <select name="card" id="card">
+                                        {% for card in cards %}
+                                            <option value="{{card}}" SELECTED>{{ card }}</option>
+                                        {% endfor %}
+                                    </select>
+                                    <button type="submit">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom-right-section">
+                    <div class="barchart-img-wrapper">
+                        <img class="barchart-img" src="static/barcharts/barchart_Hog Rider.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

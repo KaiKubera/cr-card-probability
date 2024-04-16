@@ -1,0 +1,7 @@
+old_testy_stuff/
+venv/
+.idea/
+flask_stuff/templates/index_OLD_(text_input).html
+.env
+
+
