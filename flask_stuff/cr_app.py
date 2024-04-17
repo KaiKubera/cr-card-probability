@@ -20,3 +20,7 @@ def card_probs():
                            card_img=card_img,
                            barchart_img=barchart_img,
                            cards=cards)
+
+
+if __name__ == '__main__':
+    app.run()
