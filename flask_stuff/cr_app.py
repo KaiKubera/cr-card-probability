@@ -24,4 +24,4 @@ def card_probs():
 
 
 if __name__ == '__main__':
-    serve(app=app)
+    serve(app=app, host='0.0.0.0', port=8000)
