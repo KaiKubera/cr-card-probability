@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from waitress import serve
 
 app = Flask(__name__)
 
@@ -23,4 +24,4 @@ def card_probs():
 
 
 if __name__ == '__main__':
-    app.run()
+    serve(app=app)
