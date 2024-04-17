@@ -4,6 +4,9 @@ This tool allows you to pick any card from Clash Royale and get some neat statis
 That is - what is the probability of such and such a card to be present in a deck with the card of your choice?
 
 
+Available to use at https://cr-card-probability.onrender.com
+
+
 
 # Notes
 
