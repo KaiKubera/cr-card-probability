@@ -11,7 +11,7 @@ body {
     padding-left: 10px;
     padding-bottom: 20px;
     min-width: 1000px;
-    width: 100%;
+    width: 98%;
 }
 
 .top-section {
@@ -96,7 +96,7 @@ body {
 }
 
 .card-img {
-    padding-left: 50px;
+    padding-left: 25px;
     padding-bottom: 80px;
     width: 150px;
     object-fit: contain;
@@ -109,7 +109,7 @@ body {
 
 .bottom-section {
     display: grid;
-    grid-template-columns: 560px 1.8fr;
+    grid-template-columns: 460px 1fr;
     grid-template-rows: 90vh;
     gap: 10px;
     padding-bottom: 20px;
@@ -121,7 +121,6 @@ body {
 
 .bottom-right-section {
     border: 3px solid rgb(203, 203, 203);
-    max-width: 900px;
     max-height: 240;
     overflow: auto;
     resize: vertical;
@@ -129,13 +128,14 @@ body {
 
 .barchart-img-wrapper {
     max-width: 900px;
-    max-height: 240;
+
 
 }
 
 .barchart-img {
     width: 800px;
-    padding-right: 50px;        
+    padding-right: 20px;
+    padding-left: 20px;
     margin-top: 15px;        
     object-fit: contain;
 }
